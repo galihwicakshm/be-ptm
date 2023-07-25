@@ -43,6 +43,8 @@ app.use('/api/v1/', tablesRouter);
 app.use('/api/v1/', authRouter);
 app.use('/api/v1/', mailRouter);
 
+const port = 3000;
+app.listen(port)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -51,6 +53,7 @@ app.use(function(req, res, next) {
   next();
   next(createError(404));
 });
+
 
 // error handler
 app.use(function(err, req, res, next) {
@@ -64,3 +67,5 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+
