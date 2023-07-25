@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "start": "node app.js",
     "routes": "node ./node_modules/express-list-endpoints/src/index.js"
   },
   "dependencies": {
